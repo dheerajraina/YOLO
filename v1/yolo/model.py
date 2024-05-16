@@ -66,5 +66,5 @@ class Yolov1(tf.Module):
             keras.layers.Dense(496),  # original paper usee 4960 units
             keras.layers.Dropout(0),
             keras.layers.LeakyReLU(negative_slope=0.1),
-            keras.layers.Dense(S*S*(C+B*S))
+            keras.layers.Dense(S*S*(C+B*5))
         ])
