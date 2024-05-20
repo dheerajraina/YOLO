@@ -1,7 +1,7 @@
 import tensorflow as tf
 import keras
 import numpy as np
-from v1 import intersection_over_union
+from ..utils import intersection_over_union
 
 
 class YoloLoss(tf.Module):
